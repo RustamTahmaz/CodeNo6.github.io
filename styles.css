@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;700&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Space+Mono&display=swap');
+* {
+  font-family: 'Space Mono', 'Roboto Mono', sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+
+/* Header */
+header {
+  background-image: url(https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NY741_1.29.1-hero.max-1300x1300.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  min-height: 30em;
+}
+
+
+header::after{
+  content: '';
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.55;
+}
+
+.bannertext{
+  position: absolute;
+  color: white;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+
+.bannertext h1{
+  font-size: 50px;
+}
+
+.bannertext p{
+  margin: 10px 0 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.bannertext {
+  max-width: 40%;
+
+}
+
+.bannertext h1{
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: transparent;
+  animation: text_reveal .5s ease forwards;
+  margin-left: 80px;
+  animation-delay: 1s;
+}
+
+.bannertext h1 span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgb(13, 0, 255);
+  animation: text_reveal_box 1s ease;
+  animation-delay: .5s;
+}
+
+.introduction{
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 10px 25px;
+  font-size: 14px;
+  background: transparent;
+}
+
+.introduction:hover{
+  border: 2px solid #b73127;
+  background: #b73127;
+  transition: 1s;
+  z-index: 1;
+}
+
+/* End Header */
+
+/* Navbar */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+nav a{
+  text-decoration: none;
+  color: inherit;
+}
+
+nav .logo{
+  height: 4em;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+nav ul li a{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  padding: 2px;
+}
+
+nav ul li a:hover{
+  color: #f21708;
+  padding: 5px;
+  transition: 1s;
+  z-index: 1;
+}
+/* End Navbar*/
+
+main{
+  background-color: blanchedalmond;
+}
+
+.sectionheader {
+  width: 30%;
+  text-align: center;
+  margin: 15px auto;
+  font-size: 40px;
+  border: 10px groove blue;
+  background-color: red;
+  border-radius: 25px;
+  font-family: sans-serif;
+  
+}
+
+p {
+  text-indent: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+
+hr {
+  color: black;
+  
+}
+/* Team Section */
+.team {
+
+  position: relative;
+  width: 100%;
+  align-items: center;
+  display: table;
+}
+
+.member{
+  display: table-cell;
+  background-color: bisque;
+  width: 30%;
+  padding: 10px;
+  border-right: 1px solid black ;
+
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.name{
+  margin: 25px 20%;
+  align-items: cen;
+}
+
+.picture img{
+  position: relative;
+  object-fit: cover;
+  width: 110px;
+  height: 110px;
+}
+/* End Team Section */
+
+/* Hour of Code section */
+
+.hourofcode {
+  align-items: center;
+  font-size: 1.5em;
+}
+.videocontent {
+  display: flex;
+  align-items: center;
+  margin: 10px 30px;
+}
+
+.videocontent p{
+  max-width: 40;
+}
+
+/*End Hour of Code section */
+
+/* Our Project */
+.projectinfo {
+  background-image: url(./img/web-development.webp);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  min-height: 30em;
+  z-index: 1;
+}
+
+.projectinfo::after{
+  content: '';
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+/* End Our Project */
+
+/* Footer */
+
+footer{
+  width: 100%;
+  padding-bottom: 62px;
+  background-color: rgba(47, 137, 221, 0.8);
+  text-align: center;
+  align-items: center;
+}
+
+.social-icons img{
+  width: 20px;
+  margin: 5px;
+}
+
+footer p{
+  padding-top: 50px;
+  padding-right: 1%;
+}
+
+
+#cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(0, 19, 80);
+  box-sizing: border-box;
+  transition: 0.1s;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99;
+}
+
+/* Animation */
+@keyframes text_reveal_box{
+  50%{
+      width: 100%;
+      left: 0;
+  }
+  100%{
+      width: 0;
+      left:100%;
+  }
+}
+@keyframes text_reveal{
+  100%{
+      color: white;
+  }
+}
+/* End Animation */
